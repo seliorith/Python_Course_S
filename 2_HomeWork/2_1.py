@@ -10,16 +10,9 @@
 # 2
 
 n = int(input())
-count_one = count_zero = 0
-
+k = 0
 for i in range(n):
-    coin = int(input())
-    if coin:
-        count_one += 1
-    else:
-        count_zero += 1
-
-if count_one > count_zero:
-    print(count_zero)
-else:
-    print(count_one)
+    v = int(input())
+    if v == 1:
+        k += 1
+print(k if k < n/2 else n-k)

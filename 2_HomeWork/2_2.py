@@ -9,13 +9,13 @@
 # 4 4 -> 2 2
 # 5 6 -> 2 3
 
-s = int(input())
-p = int(input())
-num_1 = 1
-
-while num_1 < p:
-    num_2 = s - num_1
-    if s == num_1 + num_2 and p == num_2 * num_1:
-        print(num_1, num_2)
+a = int(input())
+b = int(input())
+c = 0
+for i in range(a + b):
+    if c:
         break
-    num_1 += 1
+    for j in range(a + b):
+        if i + j == a and i * j == b:
+            c = 1
+            print(i, j)    
