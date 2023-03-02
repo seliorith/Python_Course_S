@@ -9,4 +9,6 @@ def pow_num(a, b):
     return pow_num(a, b - 1) * a
 
 
-print(pow_num(int(input()), int(input())))
+n = int(input())
+m = int(input())
+print(pow_num(n, m))

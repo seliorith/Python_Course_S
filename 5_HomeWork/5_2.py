@@ -3,12 +3,12 @@
 # Из всех арифметических операций допускаются только +1 и -1.
 # Также нельзя использовать циклы.
 
-def f(a, b):
+def sum(a, b):
     if b == 0:
         return a
-    return f(a + 1, b - 1)
+    return sum(a + 1, b - 1)
 
 
 n = int(input())
 m = int(input())
-print(f(n, m))
+print(sum(n, m))
